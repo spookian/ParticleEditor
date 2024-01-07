@@ -1,6 +1,6 @@
 ﻿namespace ParticleLib.Files
 {
-    public unsafe class MainHeader : FileData
+    public class MainHeader : FileData
     {
         public MainHeader(FileStream file) : base(file, 0)
         {

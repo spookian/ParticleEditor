@@ -58,7 +58,11 @@ namespace ParticleLib.Files
         {
             byte[] bytes = new byte[size];
             uint n_offset = offset + _offset;
-            _base.Read(bytes, (int)n_offset, size);
+
+            _base.Seek(n_offset, SeekOrigin.Begin);
+            _base.Read(bytes, 0, size);
+            _base.Seek(0, SeekOrigin.Begin);
+
             return bytes;
         }
 

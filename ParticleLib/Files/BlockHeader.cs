@@ -3,15 +3,15 @@
     public class BlockHeader : FileData
     {
         FileType type;
-        ProjectHeader project;
-        SubfileTable subfiles;
+        public ProjectHeader Project;
+        public SubfileTable Subfiles;
 
         const int headerSize = 0x8;
 
         public BlockHeader(FileStream file, uint offset) : base(file, offset) 
         {
-            project = new ProjectHeader(file, offset + headerSize);
-            subfiles = new SubfileTable(file, offset + headerSize + project.Size);
+            Project = new ProjectHeader(file, offset + headerSize);
+            Subfiles = new SubfileTable(file, offset + headerSize + Project.Size);
 
             if (Identifier == "REFT") type = FileType.BREFT;
             else type = FileType.BREFF;

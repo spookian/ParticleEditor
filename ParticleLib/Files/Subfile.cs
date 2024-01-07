@@ -7,7 +7,7 @@
         protected byte[] _data;
         public Subfile(FileStream file, uint offset, SubfileTable table) : base(file, offset)
         {
-            _strlen = GetUInt(0, Endianness.BIG);
+            _strlen = GetUShort(0, Endianness.BIG);
             _table = table;
         }
 

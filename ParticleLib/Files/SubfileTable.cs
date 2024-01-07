@@ -6,7 +6,7 @@
         public SubfileTable(FileStream file, uint offset) : base(file, offset)
         {
             ushort file_num = Length;
-            _files = new Subfile[offset];
+            _files = new Subfile[file_num];
             uint sub_offset = 0x8;
 
             for(int i = 0; i < file_num; i++)
