@@ -11,7 +11,7 @@
 
             for(int i = 0; i < file_num; i++)
             {
-                _files[i] = new Subfile(_base, sub_offset + offset, this);
+                _files[i] = new Subfile(_base, sub_offset + offset);
                 int append = _files[i].Name.Length + 0x0A; // 0x2 + 0x4 +0x4
                 sub_offset += (uint)append;
             }

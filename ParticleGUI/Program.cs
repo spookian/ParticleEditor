@@ -1,4 +1,4 @@
-namespace WinFormsApp1
+namespace ParticleGUI
 {
     internal static class Program
     {

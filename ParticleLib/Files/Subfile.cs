@@ -3,19 +3,22 @@
     public class Subfile : FileData
     {
         protected uint _strlen;
-        protected SubfileTable _table;
-        protected byte[] _data;
-        public Subfile(FileStream file, uint offset, SubfileTable table) : base(file, offset)
+        protected string _fileName;
+        protected uint _fileSize;
+        protected uint _offset;
+        public Subfile(FileStream file, uint offset) : base(file, offset)
         {
             _strlen = GetUShort(0, Endianness.BIG);
-            _table = table;
+            _fileName = GetString(0x2, _strlen);
+            _fileSize = GetUInt(0x06 + _strlen, Endianness.BIG);
+            _offset = GetUInt(0x02 + _strlen, Endianness.BIG);
         }
 
         public string Name
         {
             get
             {
-                return GetString(0x2, _strlen);
+                return _fileName;
             }
         }
 
@@ -23,7 +26,7 @@
         {
             get
             {
-                return GetUInt(0x06 + _strlen, Endianness.BIG);
+                return _fileSize;
             }
         }
 
@@ -31,7 +34,7 @@
         {
             get
             {
-                return GetUInt(0x02 + _strlen, Endianness.BIG);
+                return _offset;
             }
         }
     }

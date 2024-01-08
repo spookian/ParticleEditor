@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParticleGUI", "ParticleGUI\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParticleLib", "ParticleLib\ParticleLib.csproj", "{53F48DFB-2071-4EA4-9B17-B761A9AE641E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrawlLib", "BrawlCrate\BrawlLib\BrawlLib.csproj", "{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Canary|Any CPU = Canary|Any CPU
@@ -71,6 +73,30 @@ Global
 		{53F48DFB-2071-4EA4-9B17-B761A9AE641E}.Release|x64.Build.0 = Release|Any CPU
 		{53F48DFB-2071-4EA4-9B17-B761A9AE641E}.Release|x86.ActiveCfg = Release|Any CPU
 		{53F48DFB-2071-4EA4-9B17-B761A9AE641E}.Release|x86.Build.0 = Release|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Canary|Any CPU.ActiveCfg = Canary|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Canary|Any CPU.Build.0 = Canary|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Canary|x64.ActiveCfg = Canary|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Canary|x64.Build.0 = Canary|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Canary|x86.ActiveCfg = Canary|x86
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Canary|x86.Build.0 = Canary|x86
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Debug|x64.ActiveCfg = Debug|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Debug|x64.Build.0 = Debug|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Debug|x86.ActiveCfg = Debug|x86
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Debug|x86.Build.0 = Debug|x86
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Mono|Any CPU.Build.0 = Mono|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Mono|x64.ActiveCfg = Mono|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Mono|x64.Build.0 = Mono|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Mono|x86.ActiveCfg = Mono|x86
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Mono|x86.Build.0 = Mono|x86
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Release|x64.ActiveCfg = Release|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Release|x64.Build.0 = Release|x64
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Release|x86.ActiveCfg = Release|x86
+		{45AC5C1F-F24B-4CFA-BA45-B196E1D1087D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
